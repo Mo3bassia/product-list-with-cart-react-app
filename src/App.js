@@ -4,6 +4,23 @@ function App() {
   return (
     <div className="container">
       <Desserts />
+      <Cart />
+    </div>
+  );
+}
+
+function Cart() {
+  const [cart, setCart] = useState([]);
+
+  return (
+    <div className={`cart ${cart.length == 0 && "cart-empty"}`}>
+      <div className="cart_container">
+        <h4 className="heading-title-v2">Your Cart ({cart.length})</h4>
+        <img alt="emty" src="./assets/images/illustration-empty-cart.svg"></img>
+        <p className="cart_description_empty">
+          Your added items will appear here
+        </p>
+      </div>
     </div>
   );
 }
