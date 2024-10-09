@@ -37,47 +37,50 @@ function App() {
   }
 
   return (
-    <div className="container">
-      <Desserts
-        products={products}
-        setProducts={setProducts}
-        setCart={setCart}
-        cart={cart}
-      />
-      <Cart
-        products={products}
-        setProducts={setProducts}
-        cart={cart}
-        setCart={setCart}
-        setIsOpenModal={setIsOpenModal}
-      />
-      {isOpenModal && (
-        <div className="overlay">
-          <div className="modal">
-            <img
-              src="./assets/images/icon-order-confirmed.svg"
-              alt="true"
-              style={{ marginBottom: "10px" }}
-            ></img>
-            <h2 className="heading-title">Order Confirmed</h2>
-            <p className="modal_desc">We hope you enjoy your food</p>
-            <ul className="modal_items">
-              <ItemList
-                cart={cart}
-                setCart={setCart}
-                setProducts={setProducts}
-                products={products}
-                isOpenModal={isOpenModal}
-              />
-              <OrderTotal totalOrder={totalOrder} className="modal_total" />
-            </ul>
-            <Button className="modal_reset_btn" onClick={handleResetAll}>
-              Start New Order
-            </Button>
+    <>
+      <div className="container">
+        <Desserts
+          products={products}
+          setProducts={setProducts}
+          setCart={setCart}
+          cart={cart}
+        />
+        <Cart
+          products={products}
+          setProducts={setProducts}
+          cart={cart}
+          setCart={setCart}
+          setIsOpenModal={setIsOpenModal}
+        />
+        {isOpenModal && (
+          <div className="overlay">
+            <div className="modal">
+              <img
+                src="./assets/images/icon-order-confirmed.svg"
+                alt="true"
+                style={{ marginBottom: "10px" }}
+              ></img>
+              <h2 className="heading-title">Order Confirmed</h2>
+              <p className="modal_desc">We hope you enjoy your food</p>
+              <ul className="modal_items">
+                <ItemList
+                  cart={cart}
+                  setCart={setCart}
+                  setProducts={setProducts}
+                  products={products}
+                  isOpenModal={isOpenModal}
+                />
+                <OrderTotal totalOrder={totalOrder} className="modal_total" />
+              </ul>
+              <Button className="modal_reset_btn" onClick={handleResetAll}>
+                Start New Order
+              </Button>
+            </div>
           </div>
-        </div>
-      )}
-    </div>
+        )}
+      </div>
+      <Footer />
+    </>
   );
 }
 
@@ -356,6 +359,22 @@ function OrderTotal({ totalOrder, className }) {
       <p className="left">Order Total</p>
       <h3 className="right">${totalOrder}</h3>
     </div>
+  );
+}
+
+function Footer() {
+  return (
+    <footer className="footer">
+      <p>
+        Made with ❤️ by{" "}
+        <a href="https://github.com/Mo3bassia" target="_blank">
+          Mo3bassia
+        </a>
+      </p>
+      <p>
+        Built using <strong>React</strong>. Feel free to explore and connect!
+      </p>
+    </footer>
   );
 }
 

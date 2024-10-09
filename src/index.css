@@ -400,3 +400,32 @@ img.selected {
 .modal_reset_btn {
   margin-top: 40px;
 }
+
+.footer {
+  width: fit-content;
+  margin: 20px auto;
+  font-size: 0.9rem;
+  color: #6c757d;
+  background-color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  text-align: center;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.footer a {
+  color: var(--color-green);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer:hover {
+  background-color: #f1f1f1;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
