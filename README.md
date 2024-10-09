@@ -36,6 +36,10 @@ This project is part of a challenge from [Frontend Mentor](https://www.frontendm
 - Responsive design to ensure a good experience on all devices.
 - User-friendly interface with clear buttons and notifications.
 
+## Solution Link 🔗
+
+You can view my solution on Frontend Mentor here: [Product List with Cart Solution](https://www.frontendmentor.io/solutions/product-list-with-cart-react-app-4qZkQ4G8ON)
+
 ---
 
 Feel free to check out the project live and provide feedback! 😊
