@@ -4,7 +4,7 @@
 
 ## Live Demo 🔗
 
-Check out the live version of the project: [product-list-with-cart-mo3bassias-projects.vercel.app](https://product-list-with-cart-mo3bassias-projects.vercel.app)
+Check out the live version of the project: [https://product-list-with-cart-mo3bassias-projects.vercel.app](https://product-list-with-cart-mo3bassias-projects.vercel.app)
 
 ## Project Overview 📦
 
